@@ -4,7 +4,7 @@
 
 - Fatema Aljonaid - [Github](https://github.com/Fatema-J) | [Linkedin](https://www.linkedin.com/in/fatema-aljonaid/)
 - Amal AbdulJalil - [GitHub](https://github.com/Amal229) | [LinkedIn](https://www.linkedin.com/in/amalabduljalil/)
-- Abeer Majeed    - [Github](https://github.com/AbeerMajeed) | [Linkedin](http://www.linkedin.com/in/abeerhhasan)
+- Abeer Majeed    - [Github](https://github.com/AbeerMajeed) | [Linkedin](https://www.linkedin.com/in/abeerhhasan)
 - Abdulla Hisham  - [Github](Https://github.com/chupa1997) | [Linkedin](www.linkedin.com/aboodisa)
 - Afrah Mohammd   - [Github](https://github.com/Afrah-9903) | [Linkedin](www.linkedin.com/in/afrah-mohd)
 
