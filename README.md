@@ -69,19 +69,18 @@ GROQ_API_KEY=<api key for groq>
 
 ---
 ### Additional Features
-
-- [] Add a budget section
+- [] AI venue suggestions.
+- [] Auto tasks
 - [] Dark mode
-- [] Ai character text to speech
-- [] Add a design theme based on the invitation
+- [] Invitation ‘text to speech’ with friendly character
+- [] Different designs for invetition.
 
 
 ---
 
 ### Credits
 
-- Our Great Instructors at GA, to debug and explain parts we got stuck in.
-- [StackOverFlow](https://stackoverflow.com/), [GeeksforGeeks](https://www.geeksforgeeks.org/), [W3Schools](https://www.w3schools.com/) to solve issues in the code
+-
 
 
 ```
