@@ -64,8 +64,12 @@ GROQ_API_KEY=<api key for groq>
 - [EMS deployed website]()
 - [Trello board](https://trello.com/invite/b/xms18rJ1/ATTIaf4adfde3d1660f0b34f53d848fe30bfCBD50F73/project-4)
 - Screenshots:
-  ![Home Page]()
-  ![Login Page]()
+
+<div align="center">
+  <pre>
+    <img src="./images/1.png" />&nbsp;&nbsp;&nbsp;<img src="./images/6.png" />&nbsp;&nbsp;&nbsp;
+  </pre>
+</div>
 
 ---
 ### Additional Features
@@ -80,7 +84,7 @@ GROQ_API_KEY=<api key for groq>
 
 ### Credits
 
--
+- illustrations from [storyset.com](storyset.com)
+- scrollable images in readme from [/shelf project](https://github.com/NobodysLackey/shelf/blob/main/README.md)
 
 
-```
