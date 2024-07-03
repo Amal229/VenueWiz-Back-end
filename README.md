@@ -54,15 +54,15 @@ GROQ_API_KEY=<api key for groq>
 - Deployment: **Render, Surge**
 - Project Management: **Trello, Slack**
 - Designing Phase: **Canva**
-  - [component hierarchy diagram]()
+  - [component hierarchy diagram](https://trello.com/1/cards/66856759a71e10e566588620/attachments/6685676266d67bf6346cafee/download/Screenshot_2024-07-03_at_5.59.25_PM.png)
   - [wireframe]()
-  - [ERD]()
+  - [ERD](https://trello.com/1/cards/6685499be12d6b80cf036d87/attachments/66854ac58e33538ea85a7c6c/download/Screenshot_2024-07-03_at_3.57.14_PM.png)
 
 ---
 ### Deployment and Live Demo
 
 - [EMS deployed website]()
-- [Trello board]()
+- [Trello board](https://trello.com/invite/b/xms18rJ1/ATTIaf4adfde3d1660f0b34f53d848fe30bfCBD50F73/project-4)
 - Screenshots:
   ![Home Page]()
   ![Login Page]()
