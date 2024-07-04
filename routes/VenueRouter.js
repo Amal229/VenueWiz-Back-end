@@ -13,19 +13,39 @@ router.get('/:category_id/venues/:venue_id', VenueCtrl.GetVenueDetails)
 
 // add venue (for vendor)
 // /categories/venues
-router.post('/venues', VenueCtrl.CreateVenue)
+router.post(
+  '/venues',
+  middleware.stripToken,
+  middleware.verifyToken,
+  VenueCtrl.CreateVenue
+)
 
 // delete venue (for vendor)
 // categories/venues/:venue_id
-router.delete('/venues/:venue_id', VenueCtrl.DeleteVenue)
+router.delete(
+  '/venues/:venue_id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  VenueCtrl.DeleteVenue
+)
 
-// update venue
+// update venue (for vendor)
 // categories/venues/:venue_id
-router.put('/venues/:venue_id', VenueCtrl.UpdateVenue)
+router.put(
+  '/venues/:venue_id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  VenueCtrl.UpdateVenue
+)
 
 // get all venues (for vendor)
 // categories/venues/:venue_id
-router.get('/venues/:vendor_id', VenueCtrl.GetVendorVenues)
+router.get(
+  '/venues/:vendor_id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  VenueCtrl.GetVendorVenues
+)
 
 //
 
