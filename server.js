@@ -5,6 +5,7 @@ const cors = require('cors')
 const AuthRouter = require('./routes/AuthRouter')
 // const UserRouter = require('./routes/UserRouter')
 // const PostRouter = require('./routes/PostRouter')
+const EventRouter = require('./routes/Event')
 
 const PORT = process.env.PORT || 3001
 
@@ -20,6 +21,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use('/auth', AuthRouter)
 // app.use('/users', UserRouter)
 // app.use('/posts', PostRouter)
+app.use('/event', EventRouter)
 
 // app.use('/', (req, res) => {
 //   res.send(`We can do it!`)
