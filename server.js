@@ -5,7 +5,7 @@ const cors = require('cors')
 const AuthRouter = require('./routes/AuthRouter')
 // const UserRouter = require('./routes/UserRouter')
 // const PostRouter = require('./routes/PostRouter')
-const EventRouter = require('./routes/Event')
+const EventRouter = require('./routes/EventRouter')
 
 const PORT = process.env.PORT || 3001
 
