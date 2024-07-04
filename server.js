@@ -3,6 +3,7 @@ const logger = require('morgan')
 const cors = require('cors')
 
 const AuthRouter = require('./routes/AuthRouter')
+const VenueRouter = require('./routes/VenueRouter')
 
 const PORT = process.env.PORT || 3001
 
@@ -15,11 +16,15 @@ app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
+// Routes
 app.use('/auth', AuthRouter)
+app.use('/categories', VenueRouter)
 
-// app.use('/', (req, res) => {
-//   res.send(`We can do it!`)
-// })
+
+// this shouldn't be commented out
+app.use('/', (req, res) => {
+  res.send(`Connected!`)
+})
 
 app.listen(PORT, () => {
   console.log(`Running Express server on Port ${PORT} . . .`)
