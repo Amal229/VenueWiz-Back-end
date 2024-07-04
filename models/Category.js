@@ -1,13 +1,11 @@
-const { Schema } = require("mongoose")
+const { Schema } = require('mongoose')
 
 const categorySchema = new Schema({
   name: {
-    type: String,
+    type: String
   },
   img: {
-    type: String,
-  },
+    type: String
+  }
 })
-mpdule.exports = {
-  categorySchema,
-}
+module.exports = categorySchema
