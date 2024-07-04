@@ -14,7 +14,7 @@ const venueSchema = new Schema(
     image: { type: String },
     price: { type: Number, required: true },
     package: [packageSchema],
-    user_ref: { type: Schema.Types.ObjectId, ref: 'User' },
+    vendor_ref: { type: Schema.Types.ObjectId, ref: 'User' },
     categories: [{ type: Schema.Types.ObjectId, ref: 'Category' }]
   }
 )
