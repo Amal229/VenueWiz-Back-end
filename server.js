@@ -21,9 +21,9 @@ app.use('/auth', AuthRouter)
 // app.use('/users', UserRouter)
 // app.use('/posts', PostRouter)
 
-app.use('/', (req, res) => {
-  res.send(`We can do it!`)
-})
+// app.use('/', (req, res) => {
+//   res.send(`We can do it!`)
+// })
 
 app.listen(PORT, () => {
   console.log(`Running Express server on Port ${PORT} . . .`)
