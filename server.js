@@ -17,9 +17,9 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use('/auth', AuthRouter)
 
-app.use('/', (req, res) => {
-  res.send(`We can do it!`)
-})
+// app.use('/', (req, res) => {
+//   res.send(`We can do it!`)
+// })
 
 app.listen(PORT, () => {
   console.log(`Running Express server on Port ${PORT} . . .`)
