@@ -13,7 +13,7 @@ const eventSchema = new Schema({
     type: String
   },
 
-  package: { type: String, ref: 'Package' },
+  venue: { type: String, ref: 'Venue' },
   userId: { type: Schema.Types.ObjectId, ref: 'User' },
   vendorId: { type: Schema.Types.ObjectId, ref: 'Vendor' }
 })
