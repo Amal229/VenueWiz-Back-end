@@ -1,3 +1,21 @@
 const { Schema } = require('mongoose')
 
-// event schema
+const eventSchema = new Schema({
+  bookingDate: {
+    type: Date,
+    required: true
+  },
+  guestNumbers: {
+    type: Number,
+    required: true
+  },
+  notes: {
+    type: String
+  },
+
+  package: { type: String, ref: 'Package' },
+  userId: { type: Schema.Types.ObjectId, ref: 'User' },
+  vendorId: { type: Schema.Types.ObjectId, ref: 'Vendor' }
+})
+
+module.exports = eventSchema
