@@ -27,6 +27,6 @@ router.put('/venues/:venue_id', VenueCtrl.UpdateVenue)
 // categories/venues/:venue_id
 router.get('/venues/:vendor_id', VenueCtrl.GetVendorVenues)
 
-// 
+//
 
 module.exports = router
