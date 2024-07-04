@@ -1,3 +1,11 @@
 const { Schema } = require('mongoose')
 
-// category schema
+const categorySchema = new Schema({
+  name: {
+    type: String
+  },
+  img: {
+    type: String
+  }
+})
+module.exports = categorySchema

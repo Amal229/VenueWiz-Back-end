@@ -13,7 +13,10 @@ const venueSchema = new Schema(
     location: { type: String},
     image: { type: String },
     price: { type: Number, required: true },
-    user_ref: { type: Schema.Types.ObjectId, ref: 'User' },
+    package: [packageSchema],
+    vendor_ref: { type: Schema.Types.ObjectId, ref: 'User' },
     categories: [{ type: Schema.Types.ObjectId, ref: 'Category' }]
   }
 )
+
+module.exports = venueSchema
