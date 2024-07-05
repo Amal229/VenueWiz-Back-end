@@ -13,7 +13,7 @@ const getInvitations = async (req, res) => {
 
 const createInvitation = async (req, res) => {
   try {
-    const invitation = await Invitation.create(req.body)
+    const invitation = await Invitation.create(req.params.event_id)
     res.send(invitation)
   } catch (err) {}
 }
