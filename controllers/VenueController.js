@@ -4,7 +4,6 @@ const { Venue, Category } = require('../models')
 
 const GetCategories = async (req, res) => {
   try {
-    // find all categories
     const categories = await Category.find({})
     res.send(categories)
   } catch (error) {
