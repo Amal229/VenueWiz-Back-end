@@ -9,7 +9,7 @@ const invitationSchema = new Schema({
 
   event: {
     type: Schema.Types.ObjectId,
-    ref: 'event'
+    ref: 'Event'
   }
 })
 
