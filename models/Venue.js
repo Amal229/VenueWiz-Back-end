@@ -9,6 +9,7 @@ const packageSchema = new Schema({
 const venueSchema = new Schema({
   name: { type: String, required: true },
   location: { type: String },
+  descritption: { type: String },
   website: { type: String },
   image: { type: String },
   price: { type: Number, required: true },
