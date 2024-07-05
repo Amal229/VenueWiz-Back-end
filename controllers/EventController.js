@@ -2,31 +2,36 @@ const { Event } = require('../models')
 
 const createEvent = async (req, res) => {
   try {
-    const userId = req.body.userId
-    const event = new Event({ ...req.body, userId })
-    const savedEvent = await event.save()
-    const user = await User.findById(userId)
-    await user.save()
+    const newEvent = new Event(req.body)
+    const savedEvent = await newEvent.save()
     res.send(savedEvent)
   } catch (error) {
-    console.error('Error creating event', error)
+    throw error
   }
 }
 
 const getEvent = async (req, res) => {
   try {
     const userId = req.params.userId
-    const vendorId = req.params.vendorId
     const event = await Event.find({ userId })
     res.send(event)
-    const eventVendor = await Event.find({ vendorId })
-    res.send(eventVendor)
   } catch (error) {
     console.error('Error fetching event', error)
   }
 }
 
+const getVendorEvent = async (req, res) => {
+  try {
+    const vendor_id = req.params.vendor_id
+    const event = await Event.find({ vendor_ref: vendor_id })
+    res.send(event)
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
   getEvent,
-  createEvent
+  createEvent,
+  getVendorEvent
 }
