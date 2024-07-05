@@ -13,10 +13,10 @@ const eventSchema = new Schema({
     type: String
   },
 
-  package: { type: String},
+  package: { type: String },
   userId: { type: Schema.Types.ObjectId, ref: 'User' },
   vendorId: { type: Schema.Types.ObjectId, ref: 'Vendor' },
-  venue: { type: Schema.Types.ObjectId, ref: 'Venue' }
+  venueId: { type: Schema.Types.ObjectId, ref: 'Venue' }
 })
 
 module.exports = eventSchema

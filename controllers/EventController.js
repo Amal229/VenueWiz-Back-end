@@ -10,10 +10,10 @@ const createEvent = async (req, res) => {
   }
 }
 
-const getEvent = async (req, res) => {
+const getUserEvent = async (req, res) => {
   try {
-    const userId = req.params.userId
-    const event = await Event.find({ userId })
+    const userId = req.params.user_id
+    const event = await Event.find({ userId: userId })
     res.send(event)
   } catch (error) {
     console.error('Error fetching event', error)
@@ -23,15 +23,26 @@ const getEvent = async (req, res) => {
 const getVendorEvent = async (req, res) => {
   try {
     const vendor_id = req.params.vendor_id
-    const event = await Event.find({ vendor_ref: vendor_id })
+    const event = await Event.find({ vendorId: vendor_id })
     res.send(event)
   } catch (error) {
     throw error
   }
 }
 
+const getEventDetails = async (req, res) => {
+  try {
+    const event_id = req.params.event_id
+    const event = await Event.findById(event_id)
+    res.send(event)
+  } catch (error) {
+    console.error('Error fetching event', error)
+  }
+}
+
 module.exports = {
-  getEvent,
+  getUserEvent,
   createEvent,
-  getVendorEvent
+  getVendorEvent,
+  getEventDetails
 }

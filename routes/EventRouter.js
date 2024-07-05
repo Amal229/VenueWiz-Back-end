@@ -1,10 +1,16 @@
 const router = require('express').Router()
 const eventsCtrl = require('../controllers/EventController')
 
-router.get('/:eventId', eventsCtrl.getEvent)
+// get event details
+router.get('/:event_id', eventsCtrl.getEventDetails)
 
-router.get('/:vendor_id', eventsCtrl.getVendorEvent)
+// find all events for the vendor
+router.get('/user/:user_id', eventsCtrl.getUserEvent)
 
-router.post('/:eventId', eventsCtrl.createEvent)
+// find all events for the vendor
+router.get('/vendor/:vendor_id', eventsCtrl.getVendorEvent)
+
+// create event
+router.post('/', eventsCtrl.createEvent)
 
 module.exports = router
