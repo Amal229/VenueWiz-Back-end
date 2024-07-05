@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const { Invitation } = require('../models')
 
-const getInvitations = async (req, res) => {
+const getInvitation = async (req, res) => {
   try {
     const invitations = await Invitation.find({})
     res.send(invitations)
@@ -19,6 +19,6 @@ const createInvitation = async (req, res) => {
 }
 
 module.exports = {
-  getInvitations,
+  getInvitation,
   createInvitation
 }
