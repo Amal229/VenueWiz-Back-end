@@ -4,6 +4,7 @@ const cors = require('cors')
 
 const AuthRouter = require('./routes/AuthRouter')
 const VenueRouter = require('./routes/VenueRouter')
+const InvitationRouter = require('./routes/InvitationRouter')
 
 const PORT = process.env.PORT || 3001
 
@@ -19,7 +20,7 @@ app.use(express.urlencoded({ extended: false }))
 // Routes
 app.use('/auth', AuthRouter)
 app.use('/categories', VenueRouter)
-
+app.use('/Invitation', InvitationRouter)
 
 // this shouldn't be commented out
 app.use('/', (req, res) => {
