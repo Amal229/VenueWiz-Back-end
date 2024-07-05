@@ -11,6 +11,7 @@ const Venue = mongoose.model('Venue', venueSchema)
 const Category = mongoose.model('Category', categorySchema)
 const Event = mongoose.model('Event', eventSchema)
 const Invitation = mongoose.model('Invitation', invitationSchema)
+
 module.exports = {
   User,
   Venue,
