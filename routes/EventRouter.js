@@ -4,7 +4,7 @@ const eventsCtrl = require('../controllers/EventController')
 // get event details
 router.get('/:event_id', eventsCtrl.getEventDetails)
 
-// find all events for the vendor
+// find all events for the user
 router.get('/user/:user_id', eventsCtrl.getUserEvent)
 
 // find all events for the vendor

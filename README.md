@@ -14,7 +14,7 @@
 
 ![]()
 
-**_Event Management System_** is a web application designed to manage and organize events for users and vendors. The user is allowed to book an appropriate venue for his events while the vendor can manage the event and venue, edit,delete or update it. 
+### **_Event Management System_** is a web application designed to manage and organize events for users and vendors. The user is allowed to book an appropriate venue for his events while the vendor can manage the event and venue, edit,delete or update it. 
 ---
 
 ### Key Features
