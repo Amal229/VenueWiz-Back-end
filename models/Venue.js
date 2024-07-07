@@ -13,7 +13,7 @@ const venueSchema = new Schema({
   website: { type: String },
   image: { type: String },
   price: { type: Number, required: true },
-  package: [packageSchema],
+  package: { type: [packageSchema], default: [{name: "Only Venue", price: 0}] },
   vendor_ref: { type: Schema.Types.ObjectId, ref: 'User' },
   categories: [{ type: Schema.Types.ObjectId, ref: 'Category' }]
 })
