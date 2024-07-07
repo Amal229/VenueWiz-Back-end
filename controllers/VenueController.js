@@ -15,7 +15,7 @@ const GetVenues = async (req, res) => {
   try {
     // find all vanues that has the category
     const category_id = req.params.category_id
-    const venues = await Venue.find({ categories: category_id })
+    const venues = await Venue.find({ categories:  { $in: [category_id] }  })
     res.send(venues)
   } catch (error) {
     throw error
