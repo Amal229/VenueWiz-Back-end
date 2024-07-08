@@ -6,17 +6,16 @@ const packageSchema = new Schema({
   price: Number
 })
 
-
-const venueSchema = new Schema(
-  {
-    name: { type: String, required: true },
-    location: { type: String},
-    image: { type: String },
-    price: { type: Number, required: true },
-    package: [packageSchema],
-    user_ref: { type: Schema.Types.ObjectId, ref: 'User' },
-    categories: [{ type: Schema.Types.ObjectId, ref: 'Category' }]
-  }
-)
+const venueSchema = new Schema({
+  name: { type: String, required: true },
+  location: { type: String },
+  descritption: { type: String },
+  website: { type: String },
+  image: { type: String },
+  price: { type: Number, required: true },
+  package: { type: [packageSchema], default: [{name: "Only Venue", price: 0}] },
+  vendor_ref: { type: Schema.Types.ObjectId, ref: 'User' },
+  categories: [{ type: Schema.Types.ObjectId, ref: 'Category' }]
+})
 
 module.exports = venueSchema

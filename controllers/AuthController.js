@@ -9,16 +9,17 @@ const register = async (req, res) => {
       userObj = {
         name: req.body.name,
         email: req.body.email,
+        phoneNumber: req.body.phoneNumber,
         vendor: true
       }
     } else {
       userObj = {
         name: req.body.name,
         email: req.body.email,
+        phoneNumber: req.body.phoneNumber,
         vendor: false
       }
     }
-    // console.log('printing password')
     const { password } = req.body
     console.log({ password })
     let passwordDigest = await middleware.hashPassword(password)
@@ -48,7 +49,8 @@ const login = async (req, res) => {
     if (matched) {
       let payload = {
         id: user.id,
-        email: user.email
+        email: user.email,
+        type: user.vendor
       }
       let token = middleware.createToken(payload)
       return res.send({ user: payload, token })
@@ -76,7 +78,8 @@ const UpdatePassword = async (req, res) => {
       })
       let payload = {
         id: user.id,
-        email: user.email
+        email: user.email,
+        type: user.vendor
       }
       return res.send({ status: 'Password Updated!', user: payload })
     }

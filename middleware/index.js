@@ -7,8 +7,6 @@ const SALT_ROUNDS = parseInt(process.env.SALT_ROUNDS)
 const APP_SECRET = process.env.APP_SECRET
 
 const hashPassword = async (password) => {
-  console.log('salt round ', SALT_ROUNDS)
-  console.log('password ', password)
   let hashedPassword = await bcrypt.hash(password, SALT_ROUNDS)
 
   return hashedPassword

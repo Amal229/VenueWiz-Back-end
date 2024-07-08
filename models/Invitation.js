@@ -1,17 +1,16 @@
-const { Schema } = require("mongoose")
+const { Schema } = require('mongoose')
 // invitation schema
 
 const invitationSchema = new Schema({
   details: {
     type: String,
-    required: true,
+    required: true
   },
 
   event: {
-    type: Schema.types.objectId,
-    ref: "event",
-  },
+    type: Schema.Types.ObjectId,
+    ref: 'Event'
+  }
 })
-module.exports = {
-  invitationSchema,
-}
+
+module.exports = invitationSchema
