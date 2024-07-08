@@ -34,7 +34,7 @@ const GetVenueDetails = async (req, res) => {
       }
     )
 
-    res.send({ "venue": venue , "booked_dates": booked_dates})
+    res.send({ venue: venue, booked_dates: booked_dates })
   } catch (error) {
     throw error
   }
@@ -42,6 +42,7 @@ const GetVenueDetails = async (req, res) => {
 
 const CreateVenue = async (req, res) => {
   try {
+    console.log(req.body)
     const venue = await Venue.create({ ...req.body })
     res.send(venue)
   } catch (error) {
