@@ -6,7 +6,7 @@ const VenueCtrl = require('../controllers/VenueController')
 // get all venues (for vendor)
 // categories/venues/:venue_id
 router.get(
-  '/:vendor_id',
+  '/:venue_id',
   middleware.stripToken,
   middleware.verifyToken,
   VenueCtrl.GetVenueDetails
