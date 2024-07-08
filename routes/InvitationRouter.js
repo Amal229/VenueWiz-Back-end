@@ -13,5 +13,4 @@ router.get('/:event_id/invitation', InvitationCtrl.getInvitation)
 // here: /:event_id/invitation
 router.post('/:event_id/invitation', InvitationCtrl.createInvitation)
 
-
 module.exports = router
