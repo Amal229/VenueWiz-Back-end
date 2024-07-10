@@ -33,7 +33,7 @@ const getVendorEvent = async (req, res) => {
 const getEventDetails = async (req, res) => {
   try {
     const event_id = req.params.event_id
-    const event = await Event.findById(event_id)
+    const event = await Event.findById(event_id).populate('venueId')
     res.send(event)
   } catch (error) {
     console.error('Error fetching event', error)
